@@ -5,6 +5,21 @@ import Board from "./Board";
 
 function App() {
   
+  const [groguPosition, setGroguPosition] = useState(0);
+  const [merchandiseList, setMerchandiseList] = useState(['Cookie', 'Egg', 'Frog']);
+
+  const rollDice = () => {
+    const numberRandom = getRandomNumber(1,4);
+    let message = '';
+  if (numberRandom === 4) {
+    setGroguPosition(groguPosition + 1);
+    message = 'Grogu ha avanzado una casilla.';
+  } else (numberRandom === 1){
+    setMerchandiseList(po)
+  }
+
+}}
+
   return (
     <>
     <Header/>
@@ -36,6 +51,6 @@ function App() {
     </main>
     </>
   )
-}
 
-export default App
+
+export default App;
